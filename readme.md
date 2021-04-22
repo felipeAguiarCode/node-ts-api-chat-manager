@@ -1,4 +1,5 @@
 <h1 align="center">
+    <img src="docs/icons/chat32x.png">
    Node typescript api chat manager
 </h1>
 
@@ -46,6 +47,12 @@ Uma api que gerencia mensagens de um chat de serviço.
     versão do nodemon para typescript, restarta servidor automaticamente ao detectar alterações e interpreta typescript diretamente
   
 
+## ✅ Features
+
+* Criar usuários de comunicação do chat
+* Enviar mensagens a um chat
+* Listar mensagens de um chat
+
 ## ⚡ Scripts
 inicia aplicação em modo dev
 ```js
@@ -55,12 +62,6 @@ chamada do cli do typeorm
 ```js
     typeorm
 ```
-
-## ✅ Features
-
-* Criar usuários de comunicação do chat
-* Enviar mensagens a um chat
-* Listar mensagens de um chat
 
 ## 📂 Arquitetura
 
@@ -105,7 +106,7 @@ npm run typeorm migration:revert
 ```
 
 ## todos:
-- [ ] criar erros do dominio
+- [ ] Criar erros do dominio
 - [ ] Usar Eslint
 
 ## 📝 Licença 

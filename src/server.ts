@@ -1,10 +1,11 @@
 import express from "express";
-import {routes} from "./routes"
+import {router} from "./routes"
 import {createConnection} from "typeorm";
 
 class Server {
     private express: express.Application;
     private port = process.env.PORT || 3333;
+    private apiVersion = process.env.APIVERSION || "/api/v1";
 
     constructor(){
         this.express = express();
@@ -19,7 +20,7 @@ class Server {
     }
 
     private setupRoutes(): void{
-        this.express.use(routes);
+        this.express.use(this.apiVersion,router);
     }
 
     private listen():void{
