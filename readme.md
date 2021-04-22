@@ -37,6 +37,8 @@ Uma api que gerencia mensagens de um chat de serviço.
     banco de dados minimalista em arquivo físico
 - uuid:
     serviço para gerar ids únicos universais
+- dotenv:
+    um arquivo de variáveis de ambiente
 
 🧩 Dependências de dev utilizadas:
 

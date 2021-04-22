@@ -1,5 +1,9 @@
 import express from "express";
-import {router} from "./routes"
+import {router} from "./routes";
+
+import * as dotenv from "dotenv";
+dotenv.config({path:__dirname+'/.env'});
+
 import {createConnection} from "typeorm";
 
 class Server {
@@ -26,6 +30,7 @@ class Server {
     private listen():void{
         this.express.listen(this.port, ()=>{
             console.log(`✔ server online on port: ${this.port}`);
+            console.log(this.apiVersion);
         })
     }
 
