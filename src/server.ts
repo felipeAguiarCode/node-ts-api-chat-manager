@@ -1,10 +1,11 @@
 import express from "express";
-import {router} from "./routes";
+import cors from "cors";
+import {createConnection} from "typeorm";
 
 import * as dotenv from "dotenv";
 dotenv.config({path:__dirname+'/.env'});
 
-import {createConnection} from "typeorm";
+import {router} from "./routes";
 
 class Server {
     private express: express.Application;
@@ -21,6 +22,7 @@ class Server {
 
     private setupMiddlewares():void{
         this.express.use(express.json());
+        this.express.use(cors());
     }
 
     private setupRoutes(): void{

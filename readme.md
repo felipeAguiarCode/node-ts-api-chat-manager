@@ -39,6 +39,8 @@ Uma api que gerencia mensagens de um chat de serviço.
     serviço para gerar ids únicos universais
 - dotenv:
     um arquivo de variáveis de ambiente
+- cors:
+    controle de Cross-origin Resource Sharing para restringir quais endereços podem chamar api ou não
 
 🧩 Dependências de dev utilizadas:
 
