@@ -1,15 +1,28 @@
+<h1 align="center">
+   Node typescript api chat manager
+</h1>
+
+<p align="center">
+  <img width="600" height="400" src="https://rockcontent.com/br/wp-content/uploads/sites/2/2020/02/boas-praticas-para-o-chat-comercial.png">
+</p>
 
 ## ⚙️ Objetivo
-Uma api que gerencia mensagens de um chat de serviço
+Uma api que gerencia mensagens de um chat de serviço.
 
 ## 🌐 Tecnologias e Conceitos Implementados
 
 🧩 Esse projeto foi desenvolvido usando as seguintes tecnologias:
 
-- Node (plataforma)
-- Typescript (linguagem)
+- ![image](docs/icons/node32x.png) Node v14.15.1 (plataforma)
+- ![image](docs/icons/typescript32x.png) Typescript v4.2.4 (linguagem)
+- ![image](docs/icons/sqlite32x.png) Sqlite v5.0.2 (banco de dados)
+- ![image](docs/icons/npm32x.png) Npm v6.14.8 (gerenciador de pacotes)
 
 🧩 Conceitos/Técnicas utilizadas:
+
+- arquitetura basica orientada a services
+- conceito de repositories para ter uma camada de acesso a banco
+- usado typeorm para interagir com banco de dados
 
 🧩 Dependências de produção utilizadas:
 
@@ -26,11 +39,22 @@ Uma api que gerencia mensagens de um chat de serviço
 
 🧩 Dependências de dev utilizadas:
 
-- ts-node-dev:
-    
 - typescript:
+    superset que adicionar tipagem e palavras reservadas mais declarativas para trabalhar com javascript orientado a objetos de maneira mais fácil
+
+- ts-node-dev:
+    versão do nodemon para typescript, restarta servidor automaticamente ao detectar alterações e interpreta typescript diretamente
+  
 
 ## ⚡ Scripts
+inicia aplicação em modo dev
+```js
+    start:dev
+```
+chamada do cli do typeorm
+```js
+    typeorm
+```
 
 ## ✅ Features
 
@@ -67,7 +91,7 @@ node --require ts-node/register ./node_modules/typeorm/cli.js "migration:create"
 ```
 ```js
 //usando script do package.json
-npx typeorm migration:create -n CreateUsers
+npx typeorm migration:create -n nomeDaMigration
 ```
 
 ### rodar migrations
@@ -80,8 +104,12 @@ npm run typeorm migration:run
 npm run typeorm migration:revert
 ```
 
-todos:
+## todos:
 - [ ] criar erros do dominio
+- [ ] Usar Eslint
+
+## 📝 Licença 
+This project is under the MIT license. See the [LICENSE] for more information.
 
 ## Autor
 
