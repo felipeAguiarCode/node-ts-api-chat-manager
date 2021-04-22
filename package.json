@@ -1,13 +1,13 @@
 {
-  "name": "nlw5",
+  "name": "chat-manager",
   "version": "1.0.0",
-  "description": "",
+  "description": "api to manage to chat",
   "main": "index.js",
   "scripts": {
     "start:dev": "ts-node-dev src/app.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "reflect-metadata": "^0.1.13",
