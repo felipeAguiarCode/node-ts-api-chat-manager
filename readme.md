@@ -1,33 +1,42 @@
 
 ## ⚙️ Objetivo
-Uma api de controle de um chat de serviço
+Uma api que gerencia mensagens de um chat de serviço
 
 ## 🌐 Tecnologias e Conceitos Implementados
 
-Esse projeto foi desenvolvido usando as seguintes tecnologias:
+🧩 Esse projeto foi desenvolvido usando as seguintes tecnologias:
 
 - Node (plataforma)
 - Typescript (linguagem)
 
-Conceitos/Técnicas utilizadas:
+🧩 Conceitos/Técnicas utilizadas:
 
-Dependências de produção utilizadas:
-- express
-- typeorm
-- reflect-metadata
-- sqlite3
-- uuid
+🧩 Dependências de produção utilizadas:
 
-Dependências de dev utilizadas:
-- ts-node-dev
-- typescript
+- express: 
+    usado para abstrair e criar aplicações com protocolo http mais fácil
+- typeorm:
+    cria uma abstração entre a aplicação e o banco
+- reflect-metadata:
+    decorators que são utilizados juntos ao orm
+- sqlite3:
+    banco de dados minimalista em arquivo físico
+- uuid:
+    serviço para gerar ids únicos universais
+
+🧩 Dependências de dev utilizadas:
+
+- ts-node-dev:
+    
+- typescript:
+
+## ⚡ Scripts
 
 ## ✅ Features
 
-* Enviar
-* Crud utilizando ORM Entity Framework Core
-* Utilizado em repository patterns e interfaces para fazer gestão de desacoplamento
-  
+* Criar usuários de comunicação do chat
+* Enviar mensagens a um chat
+* Listar mensagens de um chat
 
 ## 📂 Arquitetura
 
@@ -72,7 +81,7 @@ npm run typeorm migration:revert
 ```
 
 todos:
-- criar erros do dominio
+- [ ] criar erros do dominio
 
 ## Autor
 
